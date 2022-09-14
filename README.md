@@ -37,3 +37,12 @@ With this IO_RUN_IMMEDIATE flag, it takes significantly less time to comlete all
 
 ## Question 8
 
+* -s1-l3:50,3:50 takes 12 CPU time.
+
+* -s 2 -l3:50,3:50 -c -p takes 13 CPU time.
+
+* -s 3 -l3:50,3:50 -c -p takes 13 CPU time as well.
+
+IO_RUN_* does not have any effect on the outcome.
+
+SWTICH_ON_END increases execution time significantly for all of the runs.
